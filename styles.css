@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+.container {
+  width: auto;
+}
+
+.title-header {
+  margin: 25px;
+}
+
+.title-header a {
+  color: black;
+  text-decoration: none;
+  font-family: "Inconsolata";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title-header a header {
+  font-family: "Inconsolata";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 25;
+}
+
+.img-header {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+.img-header img {
+  width: 200px;
+}
+
+.header-content {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: -0.035em;
+  width: auto;
+  color: #333333;
+  margin: 25px;
+}
+
+.header-desc {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+  width: auto;
+  line-height: 27px;
+  color: #333333;
+  margin: 25px;
+}
+
+.button {
+  margin: 50px 25px;
+  width: auto;
+}
+
+.button a {
+  text-decoration: none;
+  border: 1px solid;
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.footer p {
+  color: #bdbdbd;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .sub-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 150px 30px;
+    gap: 0px 50px;
+  }
+
+  .img-header {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+
+  .img-header img {
+    width: 100%;
+    height: 100%;
+  }
+  .header-content {
+    grid-column: 2/3;
+  }
+
+  .header-desc {
+    grid-column: 2/3;
+  }
+
+  .button {
+    grid-column: 2/3;
+  }
+}
